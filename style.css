@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -28,12 +29,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 10px;
   background: var(--nav-header);
 }
 
 .header .logo img {
-  height: 70px;
+  height: 50px;
 }
 
 .nav-links {
@@ -44,8 +45,7 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: black;
-  font-size: 18px;
+  color: #333;
   font-weight: bold;
 }
 
@@ -76,8 +76,8 @@ body {
   position: absolute;
   bottom: 40px;
   left: 40px;
-  padding: 10px 70px; 
-  font-weight: bold;
+  display: block;
+  padding: 10px 20px;
   color: white;
   background: var(--linear-gradient);
 }
@@ -92,15 +92,11 @@ body {
   text-align: center;
   padding: 20px;
 }
-.hotel-section{
-  display: flex;
-  flex-direction: column;
-}
-.label-container .title {
-  font-size: 28px;
+.hotel-section .label-container .title {
+  font-size: 24px;
   padding: 20px;
   text-align: start;
-  margin-left: 12px;
+  margin-left: 15px;
 }
 
 .card-container {
@@ -157,8 +153,8 @@ body {
 
 .menu-toggle {
   position: absolute;
-  top: -99px;
-  left: -99px;
+  top: -999px;
+  left: -999px;
 }
 
 .menu-button {
@@ -181,9 +177,13 @@ body {
     position: absolute;
     background: var(--nav-header);
     top: 60px;
-    left: 0px;
+    left: 0;
     padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
+    transition: all 0.3s ease;
   }
 
   .menu-toggle:checked ~ .nav-links {
@@ -196,13 +196,7 @@ body {
 
   .nav-links li a {
     font-size: 16px;
-  }
-
-  .image-container span {
-    bottom: 20px;
-    left: 20px;
-    font-size: 16px;
-    padding: 8px 20px; 
+    justify-content: center;
   }
 
   .card {
@@ -220,22 +214,7 @@ body {
   }
 
   .nav-links li a {
-    font-size: 12px;
-  }
-
-  .menu-button {
-    background: none;
-    border: 1px solid black;
-    font-size: 12px;
-    padding: 5px;
-    cursor: pointer;
-  }
-
-  .image-container span {
-    bottom: 10px;
-    left: 10px;
     font-size: 14px;
-    padding: 4px 10px; 
   }
 
   .box-container {
