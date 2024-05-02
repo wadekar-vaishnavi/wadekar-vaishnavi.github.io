@@ -34,7 +34,7 @@ body {
 }
 
 .header .logo img {
-  height: 50px;
+  height: 60px;
 }
 
 .nav-links {
@@ -206,7 +206,7 @@ body {
 
 @media (max-width: 480px) {
   .header .logo img {
-    height: 500px;
+    height: 60px;
   }
 
   .social-icons i {
